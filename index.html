@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Twesigye Niclous</title>
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="Home Page for Twesigye Niclous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
-    <h1>HELLO!!</h1>
+    <header>
+        <div class="profile">
+            <img src="images/Niclous.jpg" alt="Twesigye Niclous">
+            <h1>Twesigye Niclous</h1>
+        </div>
+        <button class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-content">
+            <div class="module course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="module toloria">
+                <h2>Kampala, Uganda</h2>
+                <img src="images/grey-crowned-cranes-in-love-large.webp" alt="grey-crowned-cranes-in-love-large">
+                <p class="caption">Crested Cranes</p>
+            </div>
+        </section>
+
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-group">
+                <button class="filter active">All</button>
+                <button class="filter">CSE</button>
+                <button class="filter">WDD</button>
+            </div>
+            <div class="course-buttons">
+                <button class="course-button cse">CSE 110</button>
+                <button class="course-button wdd">WDD 130</button>
+                <button class="course-button cse">CSE 111</button>
+                <button class="course-button cse">CSE 210</button>
+                <button class="course-button wdd">WDD 131</button>
+                <button class="course-button wdd">WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Twesigye Niclous 🌸 Uganda <img src="images/uganda.webp" alt="uganda Flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
