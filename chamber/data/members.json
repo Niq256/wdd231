@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Kampala Tech Solutions",
+        "address": "Plot 17, Nakasero Hill, Kampala",
+        "phone": "+256 777 123456",
+        "website": "https://kampalatech.com",
+        "image": "kampala-tech-slns.jpg",
+        "membershipLevel": 3,
+        "tagline": "Innovating Uganda's Future",
+        "contactPerson": "John Doe"
+    },
+    {
+        "name": "Victoria Coffee Roasters",
+        "address": "Industrial Area, Jinja Road, Kampala",
+        "phone": "+256 700 987654",
+        "website": "http://victoriacoffee.ug",
+        "image": "victoria-coffee.png",
+        "membershipLevel": 2,
+        "tagline": "Finest Ugandan Coffee",
+        "established": 2010
+    },
+    {
+        "name": "Nile Adventure Safaris",
+        "address": "Kira Road, Kamwokya, Kampala",
+        "phone": "+256 755 222333",
+        "website": "https://nilesafaris.com",
+        "image": "nile-adventure.jpg",
+        "membershipLevel": 3,
+        "tagline": "Explore the Pearl of Africa",
+        "specialOffers": true
+    },
+    {
+        "name": "Makerere University Press",
+        "address": "University Road, Makerere, Kampala",
+        "phone": "+256 414 504000",
+        "website": "http://press.mak.ac.ug",
+        "image": "makerere-press.jpg",
+        "membershipLevel": 1,
+        "tagline": "Publishing Knowledge",
+        "category": "Education"
+    },
+    {
+        "name": "Kampala Furniture House",
+        "address": "Ntinda Trading Centre, Kampala",
+        "phone": "+256 788 777888",
+        "website": "http://kampalafurniture.com",
+        "image": "k-furniture-house.jpg",
+        "membershipLevel": 2,
+        "tagline": "Quality Furniture for Your Home",
+        "deliveryOptions": "Nationwide"
+    },
+    {
+        "name": "Uganda Renewable Energy Ltd",
+        "address": "Bugolobi, Spring Road, Kampala",
+        "phone": "+256 799 112233",
+        "website": "http://urenergy.co.ug",
+        "image": "ug-renew-energy.jpg",
+        "membershipLevel": 1,
+        "tagline": "Powering a Sustainable Future",
+        "services": ["Solar", "Hydro", "Wind"]
+    },
+    {
+        "name": "The Acacia Hotel",
+        "address": "Kololo, Acacia Avenue, Kampala",
+        "phone": "+256 414 303030",
+        "website": "http://theacaciahotel.com",
+        "image": "acacia-hotel.jpg",
+        "membershipLevel": 3,
+        "tagline": "Your Comfort is Our Priority",
+        "amenities": ["Swimming Pool", "Restaurant", "Gym"]
+    },
+    {
+        "name": "Prime Legal Advocates",
+        "address": "Lumumba Avenue, Kampala",
+        "phone": "+256 414 252525",
+        "website": "http://primelegal.ug",
+        "image": "p-legal-advocates.jpg",
+        "membershipLevel": 1,
+        "tagline": "Justice and Integrity",
+        "practiceAreas": ["Corporate Law", "Real Estate", "Litigation"]
+    }
+]
