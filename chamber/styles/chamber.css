@@ -5,7 +5,11 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
+main h1 {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    text-align: center;
+}
 header {
     background-color: #fff;
     color: #333;
@@ -16,7 +20,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -44,7 +47,7 @@ header {
 }
 
 .main-nav ul li a.active {
-    color: #0151a5; 
+    color: #194C05; 
 }
 
 .hamburger {
