@@ -68,6 +68,64 @@ header h1 {
 .hamburger.open .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+body {
+  margin: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#week01, #week02, #week03,
+#dialog-box {
+  padding: 1em;
+  max-width: 50%;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+
+  &::backdrop {
+    background: rgb(0 0 0 / 70%);
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+  background: #333;
+  color: #eee;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+
+  /* Hover and focus states for buttons */
+  &:hover,
+  &:focus {
+    background: purple;
+  }
+}
+
+/* Styles for any 'dialog' element when it's open */
+dialog[open] {
+  background-color: beige;
+  border-radius: 10px;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+code {
+  color: forestgreen;
+}
+
 
 nav {
     width: 100%;
