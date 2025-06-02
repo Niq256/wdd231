@@ -91,3 +91,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Set current year
+const yearSpan = document.getElementById('currentyear');
+yearSpan.textContent = new Date().getFullYear();
+
+// Set last modified date
+const lastModifiedPara = document.getElementById('lastModified');
+lastModifiedPara.textContent = `Last updated: ${document.lastModified}`;
+
+// Set the timestamp when the page loads
+window.onload = function() {
+    const timestampField = document.getElementById('timestamp');
+    if (timestampField) {
+        const now = new Date();
+        timestampField.value = now.toISOString();
+    }
+};
+
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+// Close modal if user clicks outside of it
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+}

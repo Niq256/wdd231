@@ -1,0 +1,262 @@
+.chamber-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Space before cards on small screens */
+}
+
+.chamber-form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.chamber-form legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+.chamber-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.chamber-form input[type="text"],
+.chamber-form input[type="email"],
+.chamber-form input[type="tel"],
+.chamber-form select,
+.chamber-form textarea {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.chamber-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.chamber-form input[type="submit"] {
+    background-color: #004085;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.4s ease;
+}
+
+.chamber-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Membership Cards Styling */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.membership-cards h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: #e9f5ff; /* Light blue background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    text-align: center;
+    transform: translateY(20px); /* Initial state for animation */
+    opacity: 0; /* Initial state for animation */
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Animation properties */
+    border: 1px solid #9ed5fa;
+}
+
+.card.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card h4 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #3B3B3B;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #004085;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Blurs the background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeInModal 0.3s ease-out;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal-content h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.modal-content li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .join-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; /* Form takes more space than cards */
+        gap: 40px;
+        align-items: start; /* Align content to the top */
+    }
+
+    .chamber-form {
+        margin-bottom: 0; /* Remove margin on larger screens */
+    }
+
+    .membership-cards {
+        flex-direction: column; /* Cards still stack vertically on the side */
+    }
+}
+
+/* thank you page */
+
+.thankyou-page-main {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f8ff; /* Light background for thank you page */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.thankyou-page-main h2 {
+    color: #003B7A;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.thankyou-page-main p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.submitted-info {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+    max-width: 500px;
+}
+
+.submitted-info p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.submitted-info p strong {
+    color: #0056b3;
+    display: inline-block;
+    width: 180px; /* Align the values */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #004085;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
