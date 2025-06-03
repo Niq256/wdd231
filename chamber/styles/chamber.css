@@ -36,20 +36,16 @@ header {
     margin: 0;
     display: flex;
 }
-
 .main-nav ul li {
     margin-left: 20px;
 }
-
 .main-nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
 .main-nav ul li a.active {
     color: #194C05; 
 }
-
 .hamburger {
     display: none;
     background: none;
@@ -58,7 +54,6 @@ header {
     cursor: pointer;
     color: #333;
 }
-
 main {
     padding: 20px;
 }
@@ -79,7 +74,6 @@ main {
     display: block;
     height: 600px;
 }
-
 .hero-overlay {
     position: absolute;
     top: 50%;
@@ -91,11 +85,9 @@ main {
     padding: 20px;
     border-radius: 8px;
 }
-
 .hero-overlay h2 {
     margin-top: 0;
 }
-
 .hero-overlay .button {
     display: inline-block;
     padding: 10px 20px;
@@ -105,7 +97,6 @@ main {
     border-radius: 5px;
     margin-top: 15px;
 }
-
 .keynote-tickets {
     position: absolute;
     bottom: 20px;
@@ -118,7 +109,6 @@ main {
     cursor: pointer;
     font-weight: bold;
 }
-
 .community-info {
     background-color: #fff;
     padding: 20px;
@@ -126,13 +116,11 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-
 .events ul, .forecast ul {
     list-style: none;
     padding: 0;
@@ -218,8 +206,6 @@ main {
     border-radius: 5px;
     margin-top: 10px;
 }
-
-
 .member-list {
     padding: 20px;
     background-color: #fff;
@@ -227,13 +213,11 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-
 .list-view {
     display: flex;
     flex-direction: column;
@@ -252,7 +236,6 @@ main {
     display: flex;
     align-items: center;
 }
-
 .member-card img {
     max-width: 80px;
     height: auto;
@@ -273,7 +256,6 @@ main {
     text-align: right;
     margin-bottom: 10px;
 }
-
 .toggle-container button {
     padding: 8px 15px;
     background-color: #374d05;
@@ -293,7 +275,6 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-
 .member-list.grid-view .member-card {
     border: 1px solid #ccc;
     padding: 15px;
@@ -318,7 +299,6 @@ main {
     padding: 10px;
     border-radius: 5px;
 }
-
 @media (max-width: 600px) {
     .grid-view {
         grid-template-columns: 1fr;
@@ -334,7 +314,6 @@ main {
         margin-right: 0;
     }
 }
-
 footer {
     background-color: #283802;
     color: #FFFFFF;
@@ -354,11 +333,9 @@ footer {
     display: flex;
     gap: 30px;
 }
-
 .social-links a {
     display: block;
 }
-
 .social-links img {
     height: 40px;
     width: auto;
@@ -397,17 +374,14 @@ footer {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 10;
     }
-
     .main-nav.open {
         display: block;
     }
-
     .main-nav ul {
         flex-direction: column;
         align-items: flex-start;
         padding: 1em;
     }
-
     .main-nav ul li {
         margin: 0.5em 0;
     }
@@ -419,18 +393,15 @@ footer {
     .hero-overlay {
         padding: 15px;
     }
-
     .hero-overlay h2 {
         font-size: 1.5em;
     }
-
     .keynote-tickets {
         bottom: 10px;
         right: 10px;
         font-size: 0.9em;
         padding: 8px 12px;
     }
-
     .cta-grid {
         grid-template-columns: 1fr;
     }
@@ -443,7 +414,6 @@ footer {
         margin-bottom: 10px;
     }
 }
-
 @media (max-width: 600px) {
     .logo img {
         height: 40px;
@@ -454,7 +424,6 @@ footer {
         font-size: 1.2em;
     }
 }
-
 /* Form Styling */
 form {
     background: #fff;
@@ -478,7 +447,6 @@ form input, form select, form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 form button {
     background-color: #023870;
     color: white;
