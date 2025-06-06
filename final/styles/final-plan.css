@@ -1,0 +1,90 @@
+/* Color Schema Variables */
+:root {
+    --primary-color: #2C3E50; /* Dark Blue/Charcoal */
+    --accent-color: #5C3B05; /* Vibrant Orange/Gold */
+    --background-color: #ECF0F1; /* Light Gray */
+}
+
+/* Typography */
+body {
+    font-family: "Monda", sans-serif; /* Body text font */
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+h2 {
+    font-family: "Eagle Lake", serif;
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+}
+
+h3 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.4em;
+    color: var(--accent-color);
+}
+
+/* Layout */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+/* Specific elements */
+strong {
+    color: var(--accent-color);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: monospace;
+    color: #272727;
+    border-radius: 5px;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
