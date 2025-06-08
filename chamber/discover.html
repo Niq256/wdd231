@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Kampala | Kampala Chamber of Commerce</title>
+    <meta name="description" content="Discover the vibrant city of Kampala, its demographics, features, and attractions. Learn about local businesses and community information.">
+    <meta name="author" content="Twesigye Niclous">
+    <meta property="og:title" content="Discover Kampala | Kampala Chamber of Commerce">
+    <meta property="og:description" content="Explore Kampala's attractions, demographics, and local features.">
+    <meta property="og:url" content="https://niq256.github.io/wdd231/chamber/discover.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/kampala-city.jpg" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kampala Chamber of Commerce">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    </head>
+<body class="discover-page">
+    <header>
+        <div class="logo">
+            <img src="images/kampala-logo.jpg" alt="Kampala Chamber of Commerce Logo">
+            <h1>Kampala Chamber of Commerce | Discover</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">☰</button>
+    </header>
+
+    <main class="discover-main">
+        <h1>Discover Kampala</h1>
+
+        <section class="demographics-section">
+            <h2>Kampala at a Glance</h2>
+            <div class="demographics-content">
+                <div class="demographic-item">
+                    <h3>Population</h3>
+                    <p>Approximately 1.7 million residents (2020 estimate)</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>Area</h3>
+                    <p>About 189 km² (73 sq mi)</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>Climate</h3>
+                    <p>Tropical rainforest climate, average temperature 22°C (72°F)</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>Economy</h3>
+                    <p>Service-based, including finance, manufacturing, and tourism.</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>Language</h3>
+                    <p>English (official), Luganda, Swahili</p>
+                </div>
+                <div class="demographic-item">
+                    <h3>Attractions</h3>
+                    <p>Historical sites, vibrant markets, national parks nearby.</p>
+                </div>
+            </div>
+        </section>
+        <div class="discover-grid-container">
+            <section class="discover-gallery">
+                <h2>Places of Interest</h2>
+                <div id="interest-items-grid">
+                    </div>
+            </section>
+
+            <aside class="sidebar">
+                <section class="visitor-message">
+                    <h3>Welcome, Visitor!</h3>
+                    <p id="last-visit-message"></p>
+                </section>
+                </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Kampala Chamber of Commerce</strong></p>
+            <p>123 Main Street</p>
+            <p>Kampala, Uganda</p>
+            <p>info@kampalachamber.org</p>
+            <p>(256) 777-250000</p>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><img src="images/youtube-logo.png" alt="YouTube"></a>
+            <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="images/linkedin-logo.jpg" alt="LinkedIn"></a>
+        </div>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Twesigye Niclous</p>
+            <p>&copy; <span id="currentyear"></span> Kampala Chamber of Commerce.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Uganda Museum",
+        "image": "uganda-museum.webp",
+        "address": "5-7 Kira Rd, Kampala, Uganda",
+        "description": "The oldest museum in East Africa, showcasing Uganda's cultural heritage, natural history, and traditional music instruments."
+    },
+    {
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "image": "temple-uganda.webp",
+        "address": "Plot 31A & 31B, Wampewo Ave, Kololo, Kampala, Uganda",
+        "description": "A significant and growing religious community in Uganda, known for its emphasis on family values, community service, and a recently announced temple to be built in Kampala."
+    },
+    {
+        "name": "Kasubi Tombs",
+        "image": "kasubi-tombs.webp",
+        "address": "Kasubi, Kampala, Uganda",
+        "description": "A UNESCO World Heritage Site, burial ground for four Kabakas (kings of Buganda) and a significant architectural marvel of organic materials."
+    },
+    {
+        "name": "Nakasero Market",
+        "image": "nakasero-market.webp",
+        "address": "Market St, Kampala, Uganda",
+        "description": "A bustling open-air market known for fresh produce, spices, local crafts, and a vibrant shopping experience."
+    },
+    {
+        "name": "Baháʼí House of Worship",
+        "image": "bahai-kampala.webp",
+        "address": "Kikaya Hill, Gayaza Rd, Kampala, Uganda",
+        "description": "The Mother Temple of Africa, set in beautiful gardens, offering a tranquil space for prayer and meditation."
+    },
+    {
+        "name": "Independence Monument",
+        "image": "ind-monument.webp",
+        "address": "Speke Rd, Kampala, Uganda",
+        "description": "A prominent landmark symbolizing Uganda's independence, often a site for national celebrations."
+    },
+    {
+        "name": "Crafts Village",
+        "image": "crafts-kla.webp",
+        "address": "Buganda Road, Kampala, Uganda",
+        "description": "A vibrant hub for local artisans selling traditional Ugandan crafts, souvenirs, and artworks."
+    },
+    {
+        "name": "Lake Victoria",
+        "image": "lake-victoria.webp",
+        "address": "Entebbe, Uganda (near Kampala)",
+        "description": "The largest lake in Africa by area, offering boat rides, fishing, and scenic views, a short drive from Kampala."
+    }
+]

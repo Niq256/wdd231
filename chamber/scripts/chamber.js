@@ -1,128 +1,108 @@
-// Hamburger code
-document.addEventListener('DOMContentLoaded', () => {
+// Function to update the current year in the footer
+function updateCurrentYear() {
+    const currentYearSpan = document.getElementById('currentyear');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
+}
+
+// Function to update the last modified date in the footer
+function updateLastModified() {
+    const lastModifiedParagraph = document.getElementById('lastModified');
+    if (lastModifiedParagraph) {
+        lastModifiedParagraph.textContent = `Last Modified: ${document.lastModified}`;
+    }
+}
+
+// Hamburger menu functionality
+function setupHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     const mainNav = document.querySelector('.main-nav');
 
     if (hamburger && mainNav) {
         hamburger.addEventListener('click', () => {
             mainNav.classList.toggle('open');
+            hamburger.textContent = mainNav.classList.contains('open') ? '✕' : '☰';
         });
     }
-// Ensure business directory - list of business displays only in directory page
-    if (document.body.classList.contains('directory-page')) {
-        const mainContent = document.querySelector('main');
-        if (mainContent) {
-            const memberListSection = document.createElement('section');
-            memberListSection.classList.add('member-list');
-            mainContent.appendChild(memberListSection);
+}
 
-            const toggleButton = document.createElement('button');
-            toggleButton.textContent = 'Toggle View';
-            const toggleContainer = document.createElement('div');
-            toggleContainer.classList.add('toggle-container');
-            toggleContainer.appendChild(toggleButton);
-            mainContent.insertBefore(toggleContainer, memberListSection);
+// Function to load discover page items from JSON
+async function loadDiscoverItems() {
+    const gridContainer = document.getElementById('interest-items-grid');
+    if (!gridContainer) return; // Only run if on the discover page
 
-            async function fetchMembers() {
-                try {
-                    const response = await fetch('./data/members.json');
-                    const members = await response.json();
-                    displayMembers(members, 'grid');
-                } catch (error) {
-                    console.error('Error fetching members:', error);
-                    memberListSection.innerHTML = '<p>Error loading member directory.</p>';
-                }
-            }
+    try {
+        const response = await fetch('data/discover.json');
+        const items = await response.json();
 
-            function displayMembers(members, view) {
-                memberListSection.innerHTML = '';
-                memberListSection.classList.remove('grid-view', 'list-view');
-                memberListSection.classList.add(`${view}-view`);
+        items.forEach(item => {
+            const card = document.createElement('div');
+            card.classList.add('interest-card');
 
-                members.forEach(member => {
-                    const memberCard = document.createElement('div');
-                    memberCard.classList.add('member-card');
+            card.innerHTML = `
+                <h2>${item.name}</h2>
+                <figure>
+                    <img src="images/${item.image}" alt="${item.name}" loading="lazy">
+                </figure>
+                <address>${item.address}</address>
+                <p>${item.description}</p>
+                <a href="#" class="learn-more-button">Learn More</a>
+            `;
+            gridContainer.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error fetching discover items:', error);
+        gridContainer.innerHTML = '<p>Failed to load discovery items. Please try again later.</p>';
+    }
+}
 
-                    if (view === 'grid') {
-                        const image = document.createElement('img');
-                        image.src = `./images/${member.image || 'default-logo.png'}`;
-                        image.alt = member.companyName;
-                        memberCard.appendChild(image);
-                    }
+// Function to handle last visit message
+function displayLastVisitMessage() {
+    const messageElement = document.getElementById('last-visit-message');
+    if (!messageElement) return; // Only run if on the discover page
 
-                    const name = document.createElement('h3');
-                    name.textContent = member.name;
-                    memberCard.appendChild(name);
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = Date.now(); // Current timestamp in milliseconds
 
-                    const address = document.createElement('p');
-                    address.textContent = `Address: ${member.address}`;
-                    memberCard.appendChild(address);
+    let message = '';
 
-                    const phone = document.createElement('p');
-                    phone.textContent = `Phone: ${member.phone}`;
-                    memberCard.appendChild(phone);
+    if (!lastVisit) {
+        // First visit
+        message = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitTime = parseInt(lastVisit, 10);
+        const timeDifference = now - lastVisitTime; // Difference in milliseconds
 
-                    const website = document.createElement('p');
-                    const websiteLink = document.createElement('a');
-                    websiteLink.href = member.website;
-                    websiteLink.textContent = 'Visit Website';
-                    websiteLink.target = '_blank';
-                    website.appendChild(websiteLink);
-                    memberCard.appendChild(website);
+        const millisecondsInADay = 24 * 60 * 60 * 1000;
+        const daysDifference = Math.floor(timeDifference / millisecondsInADay);
 
-                    const membership = document.createElement('p');
-                    membership.textContent = `Membership Level: ${member.membershipLevel}`;
-                    memberCard.appendChild(membership);
-
-                    memberListSection.appendChild(memberCard);
-                });
-            }
-// view grid or list displays
-            toggleButton.addEventListener('click', () => {
-                const currentView = memberListSection.classList.contains('grid-view') ? 'grid' : 'list';
-                const newView = currentView === 'grid' ? 'list' : 'grid';
-                fetch('./data/members.json')
-                    .then(response => response.json())
-                    .then(members => displayMembers(members, newView))
-                    .catch(error => console.error('Error toggling view:', error));
-            });
-
-            fetchMembers();
+        if (daysDifference < 1) {
+            // Less than a day (same day)
+            message = "Back so soon! Awesome!";
+        } else if (daysDifference === 1) {
+            message = "You last visited 1 day ago.";
+        } else {
+            message = `You last visited ${daysDifference} days ago.`;
         }
+    }
+
+    messageElement.textContent = message;
+
+    // Store the current visit time
+    localStorage.setItem('lastVisit', now.toString());
+}
+
+
+// Event listener for DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    updateCurrentYear();
+    updateLastModified();
+    setupHamburgerMenu();
+
+    // Check if on the discover page to run specific functions
+    if (document.body.classList.contains('discover-page')) {
+        loadDiscoverItems();
+        displayLastVisitMessage();
     }
 });
-
-// Set current year
-const yearSpan = document.getElementById('currentyear');
-yearSpan.textContent = new Date().getFullYear();
-
-// Set last modified date
-const lastModifiedPara = document.getElementById('lastModified');
-lastModifiedPara.textContent = `Last updated: ${document.lastModified}`;
-
-// Set the timestamp when the page loads
-window.onload = function() {
-    const timestampField = document.getElementById('timestamp');
-    if (timestampField) {
-        const now = new Date();
-        timestampField.value = now.toISOString();
-    }
-};
-
-function openModal(id) {
-    document.getElementById(id).style.display = "block";
-}
-
-function closeModal(id) {
-    document.getElementById(id).style.display = "none";
-}
-
-// Close modal if user clicks outside of it
-window.onclick = function(event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
-}

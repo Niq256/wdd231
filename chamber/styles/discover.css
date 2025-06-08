@@ -1,0 +1,210 @@
+.discover-main {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 20px auto;
+}
+
+.discover-main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #023870;
+}
+
+/* Demographics Section */
+.demographics-section {
+    background-color: #e0f2f7;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.demographics-section h2 {
+    color: #023870;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.demographics-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.demographic-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.demographic-item h3 {
+    color: #374d05;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* Main Discover Grid Layout */
+.discover-grid-container {
+    display: grid;
+    gap: 20px;
+    /* Define grid areas for larger screens */
+    grid-template-areas:
+        "gallery gallery sidebar"; 
+    grid-template-columns: 3fr 1fr;
+}
+
+/* Gallery Section */
+.discover-gallery {
+    grid-area: gallery;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discover-gallery h2 {
+    text-align: center;
+    color: #023870;
+    margin-bottom: 25px;
+}
+
+#interest-items-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.interest-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.interest-card h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4em;
+    color: #194C05;
+    margin: 15px 10px 10px;
+    text-align: center;
+}
+
+.interest-card figure {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.interest-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+@media (min-width: 641px) { 
+    .interest-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) saturate(1.1);
+    }
+}
+
+.interest-card address,
+.interest-card p {
+    font-size: 0.95em;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    color: #555;
+    text-align: left; 
+}
+
+.interest-card address {
+    font-style: normal; 
+    margin-top: 10px;
+}
+
+.interest-card .learn-more-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #023870;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 15px 15px;
+    transition: background-color 0.3s ease;
+    align-self: center; 
+}
+
+.interest-card .learn-more-button:hover {
+    background-color: #011d40;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.visitor-message h3 {
+    color: #023870;
+    margin-top: 0;
+    text-align: center;
+}
+
+.visitor-message p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #374d05;
+    font-weight: bold;
+}
+
+/* --- Media Queries for Grid Template Areas --- */
+
+/* Small Screens (320px to 640px) */
+@media (max-width: 640px) {
+    .discover-grid-container {
+        grid-template-areas:
+            "gallery"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+
+    #interest-items-grid {
+        grid-template-columns: 1fr; /* Single column for cards */
+    }
+
+    .interest-card img {
+        height: 180px; /* Slightly smaller images on small screens */
+    }
+}
+
+/* Medium Screens (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid-container {
+        grid-template-areas:
+            "gallery"
+            "sidebar";
+        grid-template-columns: 1fr; 
+    }
+
+    #interest-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    #interest-items-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
