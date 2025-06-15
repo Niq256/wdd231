@@ -3,10 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="Discover Inspiring Christian Movie Reviews and join the discussion">
+    <meta property="og:title" content="FaithFlicks - Discover Inspiring Christian Movies">
+    <meta property="og:description" content="Discover Inspiring Christian Movie previews and join the discussion">
+    <meta property="og:url" content="https://niq256.github.io/wdd231/final/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/cover-image.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Faith Flicks">
+    <title>FaithFlicks - Discover Inspiring Christian Movies</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Eagle+Lake&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/final.css">
-</head>
+ </head>
 <body>
-    <h1>COMING SOON....</h1>
+    <header>
+        <div class="logo">
+            <img src="images/faith-flicks-logo.webp" alt="FaithFlicks Logo">
+            <h1>FaithFlicks</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="index.html#category">Categories</a></li>
+                <li><a href="subscribe.html">Join Discussions</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">☰</button>
+    </header>
+
+    <main>
+        <section class="featured-banner">
+            <div class="featured-content">
+                <img src="images/cover-image.webp" alt="Featured Movies Banner">
+                <div class="overlay">
+                    <h2>Discover Inspiring Films for Your Faith Journey</h2>
+                    <p>Explore a curated selection of movies that uplift, inspire, and resonate with Christian values.</p>
+                    <a href="index.html#join2" class="btn">Watch Trailers</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-sections container">
+            <div class="latest-reviews">
+                <h2>Latest Reviews</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <picture>
+                            <source media="(min-width: 900px)" srcset="images/forge-movie-large.webp">
+                            <source media="(min-width: 600px)" srcset="images/forge-movie-medium.webp">
+                            <img src="images/forge-movie-small.webp" alt="The Forge Movie Poster" loading="lazy">
+                        </picture>
+                        <h3>The Forge</h3>
+                        <p class="rating">Rating: ★★★★★</p>
+                        <p class="summary">A Christian drama following 19-year-old Isaiah, a directionless young man who finds purpose and faith when mentored by a Christian businessman, Joshua, through a discipleship group called "The Forge." The film explores themes of prayer, forgiveness, and transformation as Isaiah confronts his past and builds a new future rooted in his newfound beliefs.</p>
+                        <a href="index.html#join2" class="read-more">Read Review</a>
+                    </div>
+                    <div class="review-card">
+                        <picture>
+                            <source media="(min-width: 900px)" srcset="images/pines-movie-l.webp">
+                            <source media="(min-width: 600px)" srcset="images/pines-movie-m.webp">
+                            <img src="images/pines-movie.webp" alt="The Place Beyond the Pines Movie Poster" loading="lazy">
+                        </picture>
+                        <h3>The Place Beyond the Pines</h3>
+                        <p class="rating">Rating: ★★★★☆</p>
+                        <p class="summary">A heartwarming story of faith in challenging times, beautifully shot with compelling characters.</p>
+                        <a href="index.html#join2" class="read-more">Read Review</a>
+                    </div>
+                    <div class="review-card">
+                        <picture>
+                            <source media="(min-width: 900px)" srcset="images/war-room-large.webp">
+                            <source media="(min-width: 600px)" srcset="images/war-room-medium.webp">
+                            <img src="images/war-room.webp" alt="War Room Movie Poster" loading="lazy">
+                        </picture>
+                        <h3>War Room</h3>
+                        <p class="rating">Rating: ★★★★★</p>
+                        <p class="summary">A powerful Christian drama about a couple, Tony and Elizabeth Jordan, whose marriage is on the brink of collapse. Elizabeth is then challenged by an elderly, wise woman named Miss Clara to fight for her family not through human effort, but by developing a "prayer strategy" and fighting her spiritual battles in a dedicated prayer closet, transforming her life and her marriage.</p>
+                        <a href="index.html#join2" class="read-more">Read Review</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-categories" id = "category">
+                <h2>Popular Categories</h2>
+                <ul>
+                    <li><a href="review.html#categories">Biblical Dramas</a></li>
+                    <li><a href="review.html#categories">Family-Friendly Films</a></li>
+                    <li><a href="review.html#categories">Faith-Centered Stories</a></li>
+                    <li><a href="review.html#categories">Documentaries</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="call-to-action" id = "join2">
+            <div class="container">
+                <h2>Join Our FaithFlicks Community!</h2>
+                <p>Subscribe to our newsletter for the latest reviews and insights, or join our discussions.</p>
+                <div class="cta-buttons">
+                    <a href="subscribe.html" class="btn primary-btn">Subscribe to Newsletter</a>
+                    <a href="subscribe.html" class="btn secondary-btn">Join Discussions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.youtube.com/@InfoExtra256" target="_blank">Videos</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="index.html#category">Categories</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/x-icon.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.webp" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2025 FaithFlicks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/final.js" defer></script>
 </body>
 </html>

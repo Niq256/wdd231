@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "image": "images/forge-movie-small.webp",
+        "category": "Faith-Centered Stories",
+        "title": "The Forge",
+        "description": "A Christian drama following 19-year-old Isaiah, a directionless young man who finds purpose and faith when mentored by a Christian businessman, Joshua, through a discipleship group called 'The Forge.' The film explores themes of prayer, forgiveness, and transformation as Isaiah confronts his past and builds a new future rooted in his newfound beliefs.",
+        "releaseDate": "October 24, 2024"
+    },
+    {
+        "id": 2,
+        "image": "images/pines-movie.webp",
+        "category": "Faith-Centered Stories",
+        "title": "The Place Beyond the Pines",
+        "description": "A heartwarming story of faith in challenging times, beautifully shot with compelling characters. This film explores themes of legacy, fatherhood, and the choices that define our lives, all within a spiritual context.",
+        "releaseDate": "March 29, 2013"
+    },
+    {
+        "id": 3,
+        "image": "images/war-room.webp",
+        "category": "Faith-Centered Stories",
+        "title": "War Room",
+        "description": "A powerful Christian drama about a couple, Tony and Elizabeth Jordan, whose marriage is on the brink of collapse. Elizabeth is then challenged by an elderly, wise woman named Miss Clara to fight for her family not through human effort, but by developing a 'prayer strategy' and fighting her spiritual battles in a dedicated prayer closet, transforming her life and her marriage.",
+        "releaseDate": "August 28, 2015"
+    },
+    {
+        "id": 4,
+        "image": "images/mary-2024.webp",
+        "category": "Biblical Dramas",
+        "title": "Mary",
+        "description": "In this timeless coming-of-age story, Mary is shunned following an otherworldly conception and forced to flee when Herod's insatiable thirst for power ignites a murderous pursuit of the newborn.",
+        "releaseDate": "December 6, 2024"
+    },
+    {
+        "id": 5,
+        "image": "images/passion-of-christ.webp",
+        "category": "Biblical Dramas",
+        "title": "The Passion of the Christ",
+        "description": "A powerful and controversial film depicting the last 12 hours of Jesus' life, focusing on the suffering and sacrifice leading up to his crucifixion. Directed by Mel Gibson, it's known for its graphic portrayal of the biblical account.",
+        "releaseDate": "February 25, 2004"
+    },
+    {
+        "id": 6,
+        "image": "images/prince-of-egypt.webp",
+        "category": "Family-Friendly Films",
+        "title": "The Prince of Egypt",
+        "description": "An animated musical drama that retells the biblical story of Moses from the Book of Exodus. It explores his journey from a privileged life as a prince of Egypt to his destiny as the deliverer of the Hebrew people from slavery, featuring stunning animation and memorable songs.",
+        "releaseDate": "December 18, 1998"
+    },
+    {
+        "id": 7,
+        "image": "images/narnia.webp",
+        "category": "Family-Friendly Films",
+        "title": "The Chronicles of Narnia: The Lion, The Witch and The Wardrobe",
+        "description": "Based on C.S. Lewis's beloved fantasy novel, this film tells the story of four siblings who discover the magical land of Narnia. They join the magnificent lion Aslan in the fight against the evil White Witch, symbolizing themes of sacrifice, redemption, and good versus evil.",
+        "releaseDate": "December 9, 2005"
+    },
+    {
+        "id": 8,
+        "image": "images/the-father.webp",
+        "category": "Documentaries",
+        "title": "Show Me the Father",
+        "description": "A variety of captivating stories offer different perspectives on the roles of fathers and inspirational stories about God.",
+        "releaseDate": "September 10, 2021"
+    },
+    {
+        "id": 9,
+        "image": "images/israel.webp",
+        "category": "Documentaries",
+        "title": "Israel: A Journey Through Time",
+        "description": "A documentary that explores the rich history, cultural significance, and biblical landscapes of Israel. It delves into archaeological discoveries, historical events, and the spiritual heritage of the Holy Land, offering a captivating visual journey.",
+        "releaseDate": "January 15, 2022"
+    },
+  {     
+    "id": 10,
+    "image": "images/bathlehem-med.webp",
+    "title": "Journey to Bethlehem",
+    "category": "Faith-Centered Stories",
+    "description": "A musical retelling of the Nativity story, following Mary and Joseph's journey and the miraculous birth of Jesus. It highlights the struggles they faced and Joseph's often-understated role.",
+    "release_date": "November 10 2023"
+  },
+  {
+    "id": 11,
+    "image": "images/angels-med.webp",
+    "title": "Ordinary Angels",
+    "category": "Faith-Centered Stories",
+    "description": "Based on a remarkable true story, a fierce but struggling hairdresser in small-town Kentucky discovers renewed purpose when she rallies a community to help a widower whose young daughter desperately needs a liver transplant.",
+    "release_date": "Febuary 23 2024"
+  },
+  {
+    "id": 12,
+    "image": "images/the-shift-med.webp",
+    "title": "The Shift",
+    "category": "Documentaries",
+    "description": "A mysterious adversary known as The Benefactor upends Kevin's world as he tries to escape an alternate dystopian reality, exploring themes of faith and perseverance.",
+    "release_date": "December 01 2023"
+  },
+  {
+    "id": 13,
+    "image": "images/after-death-med.webp",
+    "title": "After Death",
+    "category": "Documentaries",
+    "description": "A documentary that takes a scientific and personal look at Near Death Experiences, featuring interviews with authors, doctors, scientists, and near-death survivors who share their experiences of visiting the afterlife.",
+    "release_date": "October 27 2023"
+  },
+  {
+    "id": 14,
+    "image": "images/only-son-med.webp",
+    "title": "His Only Son",
+    "category": "Biblical Dramas",
+    "description": "Based on the biblical account from Genesis 22, the film depicts Abraham's three-day journey to Mount Moriah, where his faith in God is tested as he is commanded to sacrifice his son, Isaac.",
+    "release_date": "March 31 2023"
+  },
+  {
+    "id": 15,
+    "image": "images/cabrini-medium.webp",
+    "title": "Cabrini",
+    "category": "Biblical Dramas",
+    "description": "The inspiring true story of Francesca Cabrini, an Italian immigrant and Catholic nun who arrives in New York City in 1889 and battles poverty, illness, and societal resistance to establish a network of orphanages, schools, and hospitals.",
+    "release_date": "March 08 2024"
+  }
+]

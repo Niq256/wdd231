@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="Discover Inspiring Christian Movie Reviews and join the discussion">
+    <meta property="og:title" content="FaithFlicks - Movie Reviews">
+    <meta property="og:description" content="Discover Inspiring Christian Movie previews and join the discussion">
+    <meta property="og:url" content="https://niq256.github.io/wdd231/final/review.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/cover-image.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Faith Flicks">
+    <title>FaithFlicks - Movie Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Eagle+Lake&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/final.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/faith-flicks-logo.webp" alt="FaithFlicks Logo">
+            <h1>FaithFlicks</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html" class="active">Reviews</a></li>
+                <li><a href="review.html#categories">Categories</a></li>
+                <li><a href="subscribe.html">Join Discussions</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">☰</button>
+    </header>
+
+    <main>
+        <section class="reviews-page-banner">
+            <div class="banner-content">
+                <h2>Explore Our Collection of Inspiring Reviews</h2>
+                <p>Find your next faith-filled film with our in-depth reviews and curated categories.</p>
+            </div>
+        </section>
+
+        <section class="review-sections container">
+            <div class="movie-categories-menu">
+                <h2>Movie Categories</h2>
+                <nav class="categories-nav" id = "categories">
+                    <ul>
+                        <li><a href="#" class="category-link active" data-category="All">All</a></li>
+                        <li><a href="#" class="category-link" data-category="Biblical Dramas">Biblical Dramas</a></li>
+                        <li><a href="#" class="category-link" data-category="Family-Friendly Films">Family-Friendly Films</a></li>
+                        <li><a href="#" class="category-link" data-category="Faith-Centered Stories">Faith-Centered Stories</a></li>
+                        <li><a href="#" class="category-link" data-category="Documentaries">Documentaries</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="movie-review-cards">
+                <h2>Our Reviews</h2>
+                <div id="reviews-grid" class="review-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="call-to-action" id = "join">
+            <div class="container">
+                <h2>Join Our FaithFlicks Community!</h2>
+                <p>Subscribe to our newsletter for the latest reviews and insights, or join our discussions.</p>
+                <div class="cta-buttons">
+                    <a href="subscribe.html" class="btn primary-btn">Subscribe to Newsletter</a>
+                    <a href="subscribe.html" class="btn secondary-btn">Join Discussions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.youtube.com/@InfoExtra256" target="_blank">Videos</a></li>
+                    <li><a href="review.html" class="active">Reviews</a></li>
+                    <li><a href="index.html#category">Categories</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/x-icon.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.webp" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2025 FaithFlicks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-reviews-content">
+                </div>
+        </div>
+    </div>
+
+    <script src="scripts/final.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+</body>
+</html>

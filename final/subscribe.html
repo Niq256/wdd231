@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="Discover Inspiring Christian Movie Reviews and join the discussion">
+    <meta property="og:title" content="FaithFlicks - Join Discussions">
+    <meta property="og:description" content="Create a review of your most loved christian movies">
+    <meta property="og:url" content="https://niq256.github.io/wdd231/final/subscribe.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/cover-image.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Faith Flicks">
+    <title>FaithFlicks - Join Discussions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Eagle+Lake&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/subscribe.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/faith-flicks-logo.webp" alt="FaithFlicks Logo">
+            <h1>FaithFlicks</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="index.html#category">Categories</a></li>
+                <li><a href="#" class="active">Join Discussions</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger">☰</button>
+    </header>
+
+    <main>
+        <section class="join-page-banner">
+            <div class="banner-content">
+                <h2>Join Our Community Discussions!</h2>
+                <p>Connect with fellow faith-film enthusiasts. Share your thoughts, discover new perspectives, and deepen your journey.</p>
+            </div>
+        </section>
+
+        <section class="container form-section">
+            <form action="thankyou.html" method="get" class="discussion-form">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="firstName">First Name*
+                        <input type="text" id="firstName" name="firstName" title="Your First Name" autocomplete="given-name" required>
+                    </label>
+
+                    <label for="lastName">Last Name*
+                        <input type="text" id="lastName" name="lastName" title="Your Last Name" autocomplete="family-name" required>
+                    </label>
+
+                    <label for="email">Email Address*
+                        <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+                    </label>
+
+                    <label for="comments">Your Message / Discussion Topic Idea (Optional)</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Share your thoughts or suggest a discussion topic..."></textarea>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="joinDiscussions" name="option" value="join-discussions">
+                            I want to join the FaithFlicks discussion forum.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="subscribeNewsletter" name="option" value="subscribe-newsletter">
+                            Subscribe me to the FaithFlicks newsletter.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn primary-btn"> Join Discussion</button>
+            </form>
+
+            <aside class="faq-section">
+                <h2>Our Discussions Q&A</h2>
+                <div class="faq-item">
+                    <h4 class="faq-question" data-modal="ReviewModal">"I'm looking for a movie that my whole family can watch on Sunday evening that has a positive message and won't have any inappropriate content. Where can I find recommendations that align with Christian values?"</h4>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question" data-modal="ReviewModal2">"I saw a film recently that touched on some biblical themes, and I'd like to read a review that discusses those themes in depth from a Christian perspective. Is there a site that offers that kind of analysis?"</h4>
+                </div>
+            </aside>
+        </section>
+
+        <div id="ReviewModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>Family-Friendly Recommendations</h3>
+                <p>FaithFlicks will provide a dedicated **"Family-Friendly"** section and use clear content tags to highlight movies suitable for all ages, ensuring positive messages and alignment with Christian values. Our reviews will explicitly address content suitability, guiding parents in their choices.</p>
+            </div>
+        </div>
+
+        <div id="ReviewModal2" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>In-Depth Thematic Analysis</h3>
+                <p>Absolutely! FaithFlicks specializes in in-depth reviews that explore theological themes and biblical connections within films. Our **"Biblical Reviews"** section provides users with detailed analyses of how movies portray Christian concepts, encouraging deeper understanding and meaningful conversation.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="https://www.youtube.com/@InfoExtra256" target="_blank">Videos</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="index.html#category">Categories</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/x-icon.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.webp" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2025 FaithFlicks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/final.js" defer></script>
+</body>
+</html>

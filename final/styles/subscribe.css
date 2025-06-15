@@ -1,0 +1,285 @@
+.discussion-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px; 
+}
+
+.discussion-form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.discussion-form legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+.discussion-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+.discussion-form input[type="text"],
+.discussion-form input[type="email"],
+.discussion-form input[type="tel"],
+.discussion-form select,
+.discussion-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.discussion-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.discussion-form input[type="submit"] {
+    background-color: #004085;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.4s ease;
+}
+
+/* --- FAQ Section on Join Page --- */
+.faq-section {
+    flex: 1; 
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    min-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.faq-section h2 {
+    width: 100%; /* Ensuring the heading takes the full width above the questions */
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-family: 'Eagle Lake', serif;
+}
+
+.faq-item {
+    flex: 1 1 calc(50% - 10px); /* Each item takes roughly 50% width minus half the gap */
+    min-width: 250px;
+    margin-bottom: 0; 
+    border-bottom: none; 
+    padding-bottom: 0;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.faq-item .faq-question {
+    cursor: pointer;
+    flex-grow: 1; 
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+.faq-question:hover {
+    color: var(--accent-color);
+}
+
+/*  Cards  */
+.card {
+    background-color: #e9f5ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; 
+    border: 1px solid #9ed5fa;
+}
+
+.card.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card h4 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #3B3B3B;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #004085;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeInModal 0.3s ease-out;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+}
+.modal-content h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.modal-content li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+
+/* Responsive adjustments for FAQ items stacking on smaller screens */
+@media (max-width: 767px) {
+    .faq-section {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .faq-item {
+        width: 100%;
+        min-width: auto; 
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .faq-item:last-child {
+        border-bottom: none; 
+    }
+}
+/* thank you page */
+.thankyou-page-main {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.thankyou-page-main h2 {
+    color: #003B7A;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.thankyou-page-main p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.submitted-info {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+    max-width: 500px;
+}
+
+.submitted-info p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.submitted-info p strong {
+    color: #0056b3;
+    display: inline-block;
+    width: 180px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #004085;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
